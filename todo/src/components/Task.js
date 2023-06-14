@@ -11,6 +11,7 @@ import {
 import Table from "react-bootstrap/Table";
 import CompletedTask from "./CompletedTask";
 import CompletionRate from "./CompletionRate";
+import moment from "moment";
 
 const Task = () => {
   const [title, setTitle] = useState("");
@@ -108,6 +109,7 @@ const Task = () => {
                 <thead>
                   <tr>
                     <th>S.N</th>
+                    <th>Day</th>
                     <th>Title</th>
                     <th>Complition Status</th>
                     <th>Update Status</th>
@@ -118,6 +120,7 @@ const Task = () => {
                     tasks.map((t, i) => (
                       <tr key={t._id}>
                         <td>{i + 1}</td>
+                        <td>{moment(t.completionDate).format("YYYY-MM-DD")}</td>
                         <td>{t.title}</td>
                         <td>{t.completed === true ? <>True</> : <>False</>}</td>
                         <td>
