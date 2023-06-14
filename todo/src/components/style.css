@@ -1,0 +1,36 @@
+.container {
+  width: 60%;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.container h2 {
+  text-align: center;
+  color: #fff;
+  padding-bottom: 20px;
+}
+.container form {
+  display: flex;
+  gap: 5px;
+}
+.container input {
+  width: 100%;
+  padding: 13px 10px;
+  outline: none;
+  border: none;
+  font-size: 17px;
+}
+.container button {
+  width: 140px;
+  outline: none;
+  border: none;
+  background-color: rgb(244, 37, 5);
+  color: #fff;
+  font-size: 17px;
+  font-weight: 550;
+  cursor: pointer;
+}
+
+.container .all-task {
+  text-align: center;
+}

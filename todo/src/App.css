@@ -1,0 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main-section {
+  height: auto;
+  background-color: #077893;
+  padding-bottom: 100px;
+}
